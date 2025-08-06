@@ -335,7 +335,7 @@ class DetectorEngine @Inject constructor(
 
         Log.i(TAG, "clear")
 
-        _state.value != DetectorState.DESTROYED
+        _state.value = DetectorState.DESTROYED
     }
 
     /** Process the latest images provided by the [DisplayRecorder]. */

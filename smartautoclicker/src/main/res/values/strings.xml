@@ -17,8 +17,8 @@
 -->
 <resources>
 
-    <string name="app_name" translatable="false">Klick\'r</string>
-    <string name="notification_channel_name" translatable="false">Klick\'r</string>
+    <string name="app_name" translatable="false">TapCraft Pro</string>
+    <string name="notification_channel_name" translatable="false">TapCraft Pro</string>
 
     <!-- Application wide texts. -->
     <string name="notification_title">Scenario: %1$s</string>
@@ -30,9 +30,7 @@
 
 
     <string name="activity_scenario_title">Scenarios</string>
-    <string name="accessibility_service_description">This application needs this service to inject the clicks you have
-        created into the other applications once the conditions have been detected.\n\nNo data will be collected from
-        this application. Feel free to visit our github, the code is open source !</string>
+    <string name="accessibility_service_description">TapCraft Pro needs this service to execute your automation scripts and workflows in other applications.\n\nYour privacy is protected - no data is collected. This is an open source project focused on automation excellence.</string>
 
     <!--
       - Titles for the dialogs displayed from the activity.
@@ -50,6 +48,7 @@
     <string name="menu_item_title_select_all">Select all</string>
     <string name="menu_item_title_cancel">Cancel</string>
     <string name="menu_item_title_search">Search</string>
+    <string name="menu_item_title_studio">Studio</string>
     <string name="menu_item_title_settings">Settings</string>
 
     <string name="item_scenario_filter_by_name">Name</string>
@@ -84,7 +83,7 @@
       -->
     <string name="message_delete_scenario">This will delete %1$s. Are you sure ?</string>
     <string name="message_error_screen_capture_permission_dialog_not_found">Your device does not provide the standard
-        Android screen capture permission dialog. Klick\'r won\'t be able to run on it.</string>
+        Android screen capture permission dialog. TapCraft Pro won\'t be able to run on it.</string>
 
     <!--
       - Section titles.
@@ -145,7 +144,7 @@
     <!-- Legacy condition migration dialog  ======================================================================== -->
     <string name="dialog_condition_migration_title">Migration</string>
 
-    <string name="message_condition_migration_desc">Klick\'r images format have changed and your scenario needs to be updated.
+    <string name="message_condition_migration_desc">TapCraft Pro images format have changed and your scenario needs to be updated.
         This can take a few minutes depending on the number of conditions to migrate.</string>
     <string name="message_condition_migration_count">%1$d Image Conditions to migrate.</string>
     <string name="message_condition_migration_success">All Image Conditions migrated.</string>

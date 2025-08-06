@@ -1,0 +1,12 @@
+# app-ads.txt file for TapCraft Pro (Smart-AutoClicker)
+# This file helps fight fraud and safeguard app ads earnings
+# 
+# Format: <SSP/Exchange Domain>, <Publisher ID>, <Relationship>, <Certification Authority ID>
+# 
+# Google AdMob
+google.com, pub-4084721334097026, DIRECT, f08c47fec0942fa0
+
+# Additional ad networks can be added here as needed
+# Example for other networks:
+# facebook.com, YOUR_FACEBOOK_PUBLISHER_ID, DIRECT, c3e20eee3f780d68
+# unity.com, YOUR_UNITY_PUBLISHER_ID, DIRECT, 96cabb5fbdde37a7

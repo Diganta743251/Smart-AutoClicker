@@ -8,7 +8,7 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.buzbuz.smartautoclicker" />
+                  <option name="appId" value="com.gradientchat.app" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
@@ -22,10 +22,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.buzbuz.smartautoclicker" />
-                  <option name="mobileSdkAppId" value="1:970153317973:android:1d14db38d0ef2685e366dc" />
-                  <option name="projectId" value="smart-autoclicker" />
-                  <option name="projectNumber" value="970153317973" />
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

@@ -63,10 +63,17 @@ class BuildParameter(private val project: Project, private val name: String, pri
     fun asStringArrayBuildConfigField(variant: LibraryProductFlavor) {
         if (!project.isBuildForVariant(variant.name)) return
 
+        val arrayValue = if (value.isNullOrBlank()) {
+            "{}"
+        } else {
+            val items = value.split(",").map { "\"${it.trim()}\"" }.joinToString(", ")
+            "{$items}"
+        }
+
         variant.buildConfigField(
             type = "String[]",
             name = name.asBuildConfigFieldName(),
-            value = value ?: "{}",
+            value = arrayValue,
         )
     }
 

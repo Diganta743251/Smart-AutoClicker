@@ -5,9 +5,9 @@ androidCompileSdk = "35"
 androidMinSdk = "24"
 
 # Build script
-googleFirebaseCrashlyticsGradle = "3.0.3"
-googleServices = "4.4.2"
-androidGradlePlugin = "8.10.0"
+googleFirebaseCrashlyticsGradle = "3.0.5"
+googleServices = "4.4.3"
+androidGradlePlugin = "8.11.1"
 java = "21"
 kotlin = "2.1.0"
 kotlinxCoroutines = "1.10.0"
@@ -35,6 +35,17 @@ googleMaterial = "1.12.0"
 kotlinSerializationJson = "1.7.3"
 openCv = "4.11.0"
 googleDaggerHilt = "2.55"
+
+# TapCraft Pro Enhanced Features
+androidxCompose = "1.7.6"
+androidxComposeBom = "2024.12.01"
+androidxComposeActivity = "1.9.3"
+androidxComposeViewModel = "2.8.7"
+androidxComposeNavigation = "2.9.0"
+ktor = "3.0.3"
+tensorflowLite = "2.16.1"
+mlKitTextRecognition = "16.0.1"
+gson = "2.11.0"
 
 # PlayStore only
 androidBillingClient = "7.1.1"
@@ -107,6 +118,26 @@ kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", vers
 kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
 google-dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "googleDaggerHilt" }
 google-dagger-hilt-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "googleDaggerHilt" }
+
+# TapCraft Pro Enhanced Libraries
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxComposeActivity" }
+androidx-compose-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidxComposeViewModel" }
+androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxComposeNavigation" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+tensorflow-lite = { group = "org.tensorflow", name = "tensorflow-lite", version.ref = "tensorflowLite" }
+tensorflow-lite-gpu = { group = "org.tensorflow", name = "tensorflow-lite-gpu", version.ref = "tensorflowLite" }
+mlkit-text-recognition = { group = "com.google.mlkit", name = "text-recognition", version.ref = "mlKitTextRecognition" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 
 # PlayStore only. Might seem unused but check in files if that is the case
 android-billingClient = { group = "com.android.billingclient", name = "billing", version.ref = "androidBillingClient" }

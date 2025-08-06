@@ -27,15 +27,15 @@ plugins {
 
 obfuscationConfig {
     obfuscatedApplication {
-        create("com.buzbuz.smartautoclicker.application.SmartAutoClickerApplication")
+        create("com.tapcraft.pro.automation.application.SmartAutoClickerApplication")
     }
     obfuscatedComponents {
-        create("com.buzbuz.smartautoclicker.scenarios.ScenarioActivity")
-        create("com.buzbuz.smartautoclicker.SmartAutoClickerService")
+        create("com.tapcraft.pro.automation.scenarios.ScenarioActivity")
+        create("com.tapcraft.pro.automation.SmartAutoClickerService")
     }
 
     setup(
-        applicationId = "com.buzbuz.smartautoclicker",
+        applicationId = "com.tapcraft.pro.automation",
         appNameResId = "@string/app_name",
         shouldRandomize = buildParameters["randomizeAppId"].asBoolean() &&
                 buildParameters.isBuildForVariant("fDroid"),
@@ -43,10 +43,11 @@ obfuscationConfig {
 }
 
 android {
-    namespace = "com.buzbuz.smartautoclicker"
+    namespace = "com.tapcraft.pro.automation"
 
     buildFeatures {
         viewBinding = true
+        dataBinding = true
         buildConfig = true
     }
 
@@ -55,6 +56,9 @@ android {
 
         versionCode = 78
         versionName = "3.3.10"
+        
+        // Configure manifest placeholders for AdMob
+        manifestPlaceholders["adsApplicationId"] = buildParameters["adsApplicationId"].asString() ?: "ca-app-pub-3940256099942544~3347511713"
     }
 
     if (buildParameters.isBuildForVariant("fDroidDebug")) {

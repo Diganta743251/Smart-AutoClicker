@@ -28,9 +28,9 @@
     <application
         android:name="${smartAutoClickerApplication}"
         android:allowBackup="false"
-        android:icon="@mipmap/ic_smart_auto_clicker"
+        android:icon="@mipmap/ic_launcher"
         android:label="${appName}"
-        android:roundIcon="@mipmap/ic_smart_auto_clicker_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="DataExtractionRules">
@@ -47,6 +47,12 @@
         <activity
             android:name="com.buzbuz.smartautoclicker.settings.SettingsActivity"
             android:exported="false" />
+
+        <activity
+            android:name="com.tapcraft.pro.automation.ui.studio.StudioActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape" />
 
         <service
             android:name="${smartAutoClickerService}"

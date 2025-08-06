@@ -18,10 +18,10 @@
 <resources>
 
     <!--
-      * Base application theme.
-      * Colors for Material 3 created with https://m3.material.io/theme-builder#/custom
+      * TapCraft Pro application theme.
+      * Enhanced Material 3 theme with dynamic colors and modern design
     -->
-    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.Material3.DynamicColors.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_light_primary</item>
         <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
@@ -56,6 +56,23 @@
         <item name="clickOffsetStyle">@style/AppTheme.Widget.ClickOffset</item>
 
         <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- TapCraft Studio Theme for Visual Scripting -->
+    <style name="TapCraft.Theme.Studio" parent="AppTheme">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <!-- TapCraft Floating Controls Theme -->
+    <style name="TapCraft.Theme.FloatingControls" parent="Theme.Material3.DynamicColors.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
     </style>
 
 </resources>
